@@ -48,3 +48,12 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#Custom Additions
+
+# Reload ZSH RC
+alias zs="source ~/.zshrc"
+
+# Remove tracked files that should now be ignored (.gitignore).
+alias gri="git ls-files --ignored --exclude-standard | xargs -0 git rm -r"
+
